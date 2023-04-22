@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Informações</title>
+</head>
+<body>
+    <script>
+       function informacoesProjeto(nome, horasEstimadas, concluido) {
+  var informacoes = [nome, horasEstimadas, concluido];
+  return informacoes;
+}
+var nomeProjeto = "Projeto X";
+var horasEstimadas = 100;
+var projetoConcluido = false;
+
+var informacoesProjetoX = informacoesProjeto(nomeProjeto, horasEstimadas, projetoConcluido);
+
+console.log(informacoesProjetoX); 
+
+    </script>
+</body>
+</html>

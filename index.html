@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Estoque</title>
+</head>
+<body>
+    <script>
+        function calcularEstoque(estoque, vendas) {
+    const unidadesRestantes = [];
+  
+    for (let i = 0; i < estoque.length; i++) {
+      const unidadesVendidas = vendas[i] || 0;
+      const unidadesEmEstoque = estoque[i] - unidadesVendidas;
+      unidadesRestantes.push(unidadesEmEstoque);
+    }
+  
+    return unidadesRestantes;
+  }
+  
+  // Exemplo de uso da função:
+  const estoque = [10, 20, 30];
+  const vendas = [2, 15];
+  
+  const unidadesRestantes = calcularEstoque(estoque, vendas);
+  console.log(unidadesRestantes); // [8, 5, 30]
+  
+    </script>
+</body>
+</html>

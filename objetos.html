@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>obejetos</title>
+</head>
+<body>
+    <script>
+        var filme = {
+  titulo: "O Poderoso Chefão",
+  anoLancamento: 1972,
+  diretor: "Francis Ford Coppola",
+  genero: "Drama",
+  elenco: {
+    ator1: {
+      nome: "Marlon Brando",
+      papel: "Vito Corleone"
+    },
+    ator2: {
+      nome: "Al Pacino",
+      papel: "Michael Corleone"
+    }
+  },
+  imprimirInformacoes: function() {
+    console.log("Título: " + this.titulo);
+    console.log("Ano de Lançamento: " + this.anoLancamento);
+    console.log("Diretor: " + this.diretor);
+    console.log("Gênero: " + this.genero);
+    console.log("Elenco:");
+    console.log("- " + this.elenco.ator1.nome + " como " + this.elenco.ator1.papel);
+    console.log("- " + this.elenco.ator2.nome + " como " + this.elenco.ator2.papel);
+  }
+};
+
+filme.imprimirInformacoes();
+
+    </script>
+</body>
+</html>
